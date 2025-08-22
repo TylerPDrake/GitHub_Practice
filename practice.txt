@@ -1,0 +1,33 @@
+// This is my first file added to GitHub.
+
+#include <iostream>
+using namespace std;
+
+/*
+In this function, I will calculate the volume of my espresso maker water reservoir.
+@brief Computes the volume of the reservoir
+@param side length of the reservoir
+@return the volume
+*/ 
+
+double reservoir_volume(double side_length)
+{
+	double volume = side_length * side_length * side_length;  // Calculate the volume
+	return volume;		// At this time, Return the calculated volume
+}
+int main()
+{
+	double result1 = reservoir_volume(4);
+	double result2 = reservoir_volume(8);
+
+	/* 
+	*Call the function with two agruments (result1 and result2)
+	* Output the result returned by the function
+	*/
+
+	cout << "A espresso water reservoir with side length 4 has volume "
+		<< result1 << endl;
+	cout << "A espresso water reservoir with side length 8 has volume "
+		<< result2 << endl;
+	return 0;			// Indicate successful program execution
+}
